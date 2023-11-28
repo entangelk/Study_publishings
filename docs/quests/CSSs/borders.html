@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest_CSS borders</title>
     <style>
-        *{margin-top: 10px;}
+        * {
+            margin-top: 10px;
+        }
+
         div.allside {
             border-style: solid;
             padding: 10px;
         }
+
         div.redbot {
-            border: 0px solid red; 
-            border-bottom-width:1px;
+            border: 0px solid red;
+            border-bottom-width: 1px;
             padding: 10px;
         }
-        div.rounded{
+
+        div.rounded {
             border: 1px solid gray;
             border-radius: 10px;
             padding: 10px;
         }
-        div.leftblue{
+
+        div.leftblue {
             border: 0px solid blue;
             border-left-width: 3px;
             background-color: cadetblue;
@@ -28,6 +35,7 @@
         }
     </style>
 </head>
+
 <body>
     <main>
         <div class="allside">
@@ -43,5 +51,11 @@
             I have a blue left border.
         </div>
     </main>
+    <footer>
+        <form action="../../main.html" method="get">
+            <button style="width: 300px; height: 100px;">return to main</button>
+        </form>
+    </footer>
 </body>
+
 </html>
