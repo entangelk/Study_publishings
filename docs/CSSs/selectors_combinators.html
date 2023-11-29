@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/selectors_combinators.css">
+</head>
+
+<body>
+
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+            <p>4번째 패라그래프</p>
+            <div>이건? 디브라서 피만 선택했기 때문에 안됨</div>
+        </section>
+        <p>5번째 패라그래프</p>
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+    <hr>
+    <div>
+        <p>Paragraph 11 in the div.</p>
+        <p>Paragraph 21 in the div.</p>
+        <section>
+            <p>Paragraph 31 in the div.</p>
+            <p>41번째 패라그래프</p>
+            <div>이건?111 디브라서 피만 선택했기 때문에 안됨</div>
+        </section>
+        <p>51번째 패라그래프</p>
+    </div>
+
+    <p>Paragraph 42. Not in a div.</p>
+    <p>Paragraph 52. Not in a div.</p>
+    <footer>
+        <form action="../index.html" method="get">
+            <button style="width: 300px; height: 100px;">return to index</button>
+        </form>
+    </footer>
+</body>
+
+</html>
