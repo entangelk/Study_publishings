@@ -5,114 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="stylesheet" href="./css/grids_menu.css">
+    <link rel="stylesheet" href="./css/index.css">
     <style>
-        /* 외부 인용 여기서부터 */
-        /* https://velog.io/@kauthenticity/HTML-CSS-%EB%93%9C%EB%A1%AD%EB%8B%A4%EC%9A%B4-%EB%A9%94%EB%89%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0 */
-
-        /* 노멀라이즈 시작 */
-        body,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            /* 해당 태그의 list-style을 none으로 하는 것으로 ●을 제거한다 */
+        td {
+            padding: 10px;
         }
 
-        body {
-            background-color: #bababa;
+        .container {
+            margin: 5px auto;
         }
 
-        a {
-            color: inherit;
-            /* 부모 엘리먼트의 값을 물려받는다 */
-            text-decoration: none;
-            /* 해당 태그의 text-decoration을 none으로 하는 것으로 밑줄을 제거한다 */
+        .nav :hover {
+            background-color: darkmagenta;
         }
 
-        /* 노멀라이즈 끝 */
-
-        /* 라이브러리 시작 */
-        .con {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* 라이브러리 끝 */
-
-        /* 커스텀 시작 */
-        :root {
-            --site-width: 1080px;
-        }
-
-        .con-min-width {
-            min-width: var(--site-width);
-        }
-
-        .top-bar>.con {
-            width: var(--site-width);
-        }
-
-        /* 드롭다운 메뉴 시작 */
-        .top-bar__menu-box-1>ul ul {
-            display: none;
-        }
-
-        .top-bar__menu-box-1>ul>li {
-            display: inline-block;
-        }
-
-        .top-bar__menu-box-1 {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .top-bar__menu-box-1 ul {
-            background-color: black;
+        .nav > li > a {
             color: white;
         }
 
-        .top-bar__menu-box-1 ul>li>a {
-            display: block;
-            font-size: 1rem;
-            padding: 20px 100px;
-        }
-
-        .top-bar__menu-box-1 ul>li:hover>a {
-            background-color: #555;
-        }
-
-        .top-bar__menu-box-1>ul>li {
-            position: relative;
-        }
-
-        .top-bar__menu-box-1>ul>li>ul {
-            position: absolute;
-            top: 100%;
-            left: -75%;
-            width: 250%;
-        }
-
-        .top-bar__menu-box-1>ul>li:hover>ul {
-            display: block;
-        }
-
-        .top-bar__menu-box-1>ul {
-            border-radius: 600px;
-        }
-
-        /* 드롭다운 메뉴 끝 */
-
-        /* 커스텀 끝 */
-        /* 외부인용 여기까지 */
-
-        td {
-            padding: 10px;
+        .nav > li > a:active {
+            color: red;
         }
     </style>
 </head>
 
 <body>
+    <!-- top menu 1 -->
     <header class="top-bar con-min-width">
         <div class="con">
             <nav class="top-bar__menu-box-1">
@@ -173,7 +92,17 @@
             </nav>
         </div>
     </header>
-    <main>
+    <!-- top menu 2 -->
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./quests/CSSs/menus/borders.html">Border</a></li>
+            <li class="nav-item"><a href="./quests/CSSs/menus/Colors.html">Color</a></li>
+            <li class="nav-item"><a href="./quests/CSSs/menus/texts.html">Text</a></li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main class="container">
         <div style="text-align: center;">
             <h1>INDEX</h1>
         </div>
