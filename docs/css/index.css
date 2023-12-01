@@ -34,7 +34,7 @@
 
         /* 커스텀 시작 */
         :root {
-            --site-width: 1080px;
+            --site-width: 90%;
         }
 
         .con-min-width {
